@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BookOpen, ChevronDown, ChevronRight, Menu, X, User } from 'lucide-react';
+import { BookOpen, ChevronDown, ChevronRight, Menu, X, User, Bookmark, ClipboardCheck, HelpCircle } from 'lucide-react';
 import { classData } from '../data/classData';
+import { cbtData } from '../data/cbtData';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -11,6 +12,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   const [expandedClass, setExpandedClass] = useState<string | null>(null);
   const [expandedTerms, setExpandedTerms] = useState<{ [key: string]: boolean }>({});
+  const [expandedCBT, setExpandedCBT] = useState<string | null>(null);
   const location = useLocation();
 
   const toggleClass = (classId: string) => {
@@ -23,6 +25,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
       ...prev,
       [key]: !prev[key],
     }));
+  };
+
+  const toggleCBT = (classId: string) => {
+    setExpandedCBT(expandedCBT === classId ? null : classId);
   };
 
   const isActive = (path: string) => {
@@ -92,6 +98,40 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
               <User className="h-4 w-4 mr-2" />
               About Author
             </Link>
+
+            <Link 
+              to="/bookmarks" 
+              className={`flex items-center px-4 py-2 rounded-md transition-colors ${
+                isActive('/bookmarks') 
+                  ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200' 
+                  : 'text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800'
+              }`}
+              onClick={() => {
+                if (window.innerWidth < 768) {
+                  toggleSidebar();
+                }
+              }}
+            >
+              <Bookmark className="h-4 w-4 mr-2" />
+              Bookmarks
+            </Link>
+
+            <Link 
+              to="/how-to-use" 
+              className={`flex items-center px-4 py-2 rounded-md transition-colors ${
+                isActive('/how-to-use') 
+                  ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200' 
+                  : 'text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800'
+              }`}
+              onClick={() => {
+                if (window.innerWidth < 768) {
+                  toggleSidebar();
+                }
+              }}
+            >
+              <HelpCircle className="h-4 w-4 mr-2" />
+              How to Use
+            </Link>
             
             <div className="pt-4">
               <p className="px-4 text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-2">
@@ -160,6 +200,58 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
                           )}
                         </div>
                       ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-4">
+              <p className="px-4 text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-2">
+                CBT Tests
+              </p>
+              
+              {classData.map((classLevel) => (
+                <div key={`cbt-${classLevel.id}`} className="mb-1">
+                  <button
+                    className={`w-full flex items-center justify-between px-4 py-2 rounded-md text-left transition-colors ${
+                      expandedCBT === classLevel.id 
+                        ? 'bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white' 
+                        : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800'
+                    }`}
+                    onClick={() => toggleCBT(classLevel.id)}
+                  >
+                    <span>{classLevel.name} CBT</span>
+                    {expandedCBT === classLevel.id ? (
+                      <ChevronDown className="h-4 w-4" />
+                    ) : (
+                      <ChevronRight className="h-4 w-4" />
+                    )}
+                  </button>
+                  
+                  {expandedCBT === classLevel.id && (
+                    <div className="ml-4 mt-1 space-y-1">
+                      {cbtData
+                        .filter(section => section.id.startsWith(classLevel.id))
+                        .map(section => (
+                          <Link
+                            key={section.id}
+                            to={`/cbt/${section.id}`}
+                            className={`flex items-center px-4 py-1.5 text-sm rounded-md transition-colors ${
+                              isActive(`/cbt/${section.id}`)
+                                ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
+                                : 'text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800'
+                            }`}
+                            onClick={() => {
+                              if (window.innerWidth < 768) {
+                                toggleSidebar();
+                              }
+                            }}
+                          >
+                            <ClipboardCheck className="h-3 w-3 mr-2" />
+                            {section.title}
+                          </Link>
+                        ))}
                     </div>
                   )}
                 </div>

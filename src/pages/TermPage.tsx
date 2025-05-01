@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, Book, BookOpen } from 'lucide-react';
+import { ArrowLeft, Book, BookOpen, ClipboardCheck } from 'lucide-react';
 import { classData } from '../data/classData';
 
 const TermPage: React.FC = () => {
@@ -126,6 +126,23 @@ const TermPage: React.FC = () => {
             </div>
           </Link>
         ))}
+      </div>
+
+      {/* CBT Button */}
+      <div className="mt-8 text-center">
+        <Link
+          to={`/cbt/${classId}-${term.name.toLowerCase().replace(' ', '-')}`}
+          className={`
+            inline-flex items-center px-6 py-3 rounded-lg text-white font-medium
+            ${classId === 'jss1' ? 'bg-blue-600 hover:bg-blue-700' : 
+              classId === 'jss2' ? 'bg-purple-600 hover:bg-purple-700' : 
+              'bg-green-600 hover:bg-green-700'}
+            transition-colors
+          `}
+        >
+          <ClipboardCheck className="h-5 w-5 mr-2" />
+          Take {classLevel.name} {term.name} CBT Test
+        </Link>
       </div>
     </div>
   );

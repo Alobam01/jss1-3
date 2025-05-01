@@ -27,3 +27,23 @@ export interface BookmarkItem {
   weekIndex: number;
   timestamp: number;
 }
+
+export interface CBTQuestion {
+  id: string;
+  question: string;
+  options: string[];
+  correctAnswer: number;
+  explanation: string;
+  classLevel: string;
+  term: string;
+  topic: string;
+}
+
+export interface CBTSection {
+  id: string;
+  title: string;
+  description: string;
+  questions: CBTQuestion[];
+  timeLimit: number; // in minutes
+  passingScore: number;
+}

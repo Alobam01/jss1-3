@@ -871,5 +871,909 @@ export const classData: ClassLevel[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'ss1',
+    name: 'SS 1',
+    terms: [
+      {
+        name: 'First Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Introduction to ICT',
+              overview: 'Understanding the definition, importance, and scope of ICT, including different types of ICT systems.',
+              keyPoints: [
+                'ICT stands for Information and Communication Technology',
+                'Types of ICT systems: communication, computing, internet',
+                'Importance in education, business, and daily life',
+                'Examples: computers, smartphones, internet services'
+              ],
+              activity: 'Class discussion on ICT applications and identify ICT devices in classroom'
+            }
+          },
+          {
+            number: 2,
+            topic: {
+              title: 'Computer Systems',
+              overview: 'Understanding computer systems, their components, and different types of computers.',
+              keyPoints: [
+                'Components: hardware, software, peopleware',
+                'Types of computers: mainframe, micro, mini, super',
+                'Hardware components and their functions',
+                'Software categories and examples'
+              ],
+              activity: 'Group activity: Label parts of a computer system'
+            }
+          },
+          {
+            number: 3,
+            topic: {
+              title: 'Hardware Components',
+              overview: 'Detailed study of computer hardware components and their functions.',
+              keyPoints: [
+                'CPU: Central Processing Unit (brain of computer)',
+                'Memory types: RAM, ROM, cache',
+                'Input devices: keyboard, mouse, scanner',
+                'Output devices: monitor, printer, speaker',
+                'Storage devices: HDD, SSD, flash drives'
+              ],
+              activity: 'Practical: Disassemble and identify hardware components'
+            }
+          },
+          {
+            number: 4,
+            topic: {
+              title: 'Software',
+              overview: 'Understanding software types, functions, and examples.',
+              keyPoints: [
+                'System software: operating systems, utilities',
+                'Application software: word processors, spreadsheets',
+                'Examples: Windows, MS Office, antivirus',
+                'Software installation and management'
+              ],
+              activity: 'Install and explore software applications'
+            }
+          },
+          {
+            number: 5,
+            topic: {
+              title: 'Operating Systems',
+              overview: 'Understanding operating systems, their functions, and types.',
+              keyPoints: [
+                'Definition and functions of OS',
+                'Types: Windows, Linux, macOS',
+                'Basic operations and file management',
+                'User interface and system settings'
+              ],
+              activity: 'Practical: Boot a computer and explore OS interface'
+            }
+          },
+          {
+            number: 6,
+            topic: {
+              title: 'Data and Information',
+              overview: 'Understanding data, information, and the data processing cycle.',
+              keyPoints: [
+                'Difference between data and information',
+                'Data processing cycle: input, process, output',
+                'Data types: text, numeric, audio, video',
+                'Information quality and characteristics'
+              ],
+              activity: 'Group activity: Simulate data processing cycle'
+            }
+          },
+          {
+            number: 7,
+            topic: {
+              title: 'Number Systems',
+              overview: 'Understanding different number systems and their conversions.',
+              keyPoints: [
+                'Binary, decimal, octal, hexadecimal systems',
+                'Conversion between number bases',
+                'Binary arithmetic operations',
+                'Applications in computing'
+              ],
+              activity: 'Practical: Convert numbers between bases'
+            }
+          },
+          {
+            number: 9,
+            topic: {
+              title: 'Computer Ethics',
+              overview: 'Understanding ethical issues in computer usage.',
+              keyPoints: [
+                'Definition of computer ethics',
+                'Ethical issues: piracy, hacking, privacy',
+                'Intellectual property rights',
+                'Responsible computer use'
+              ],
+              activity: 'Debate: Ethical vs. unethical computer use'
+            }
+          },
+          {
+            number: 10,
+            topic: {
+              title: 'Safety Measures in ICT',
+              overview: 'Understanding safety practices in ICT environment.',
+              keyPoints: [
+                'Ergonomics and proper posture',
+                'Electrical safety measures',
+                'Data protection and security',
+                'Environmental considerations'
+              ],
+              activity: 'Practical: Demonstrate proper sitting posture and cable management'
+            }
+          }
+        ]
+      },
+      {
+        name: 'Second Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Word Processing',
+              overview: 'Understanding word processing software and document creation.',
+              keyPoints: [
+                'Definition and features of word processors',
+                'Document creation and formatting',
+                'Tools and functions in MS Word',
+                'Document layout and design'
+              ],
+              activity: 'Practical: Create a formatted document'
+            }
+          },
+          {
+            number: 2,
+            topic: {
+              title: 'Spreadsheets',
+              overview: 'Understanding spreadsheet software and data management.',
+              keyPoints: [
+                'Definition and features of spreadsheets',
+                'Basic operations in MS Excel',
+                'Formulas and functions',
+                'Charts and data visualization'
+              ],
+              activity: 'Practical: Create a simple budget spreadsheet'
+            }
+          },
+          {
+            number: 3,
+            topic: {
+              title: 'Presentation Software',
+              overview: 'Understanding presentation software and slide creation.',
+              keyPoints: [
+                'Definition and features of presentation software',
+                'Creating and formatting slides',
+                'Animations and transitions',
+                'Presentation delivery techniques'
+              ],
+              activity: 'Practical: Design a presentation on ICT benefits'
+            }
+          },
+          {
+            number: 4,
+            topic: {
+              title: 'File Management',
+              overview: 'Understanding file organization and management.',
+              keyPoints: [
+                'Creating and saving files',
+                'File organization and folders',
+                'File extensions and types',
+                'Backup and recovery'
+              ],
+              activity: 'Practical: Organize files in folders'
+            }
+          },
+          {
+            number: 5,
+            topic: {
+              title: 'Introduction to Programming',
+              overview: 'Basic concepts of programming and languages.',
+              keyPoints: [
+                'Definition of programming',
+                'Types of programming languages',
+                'Basic programming concepts',
+                'Examples: Python, C++'
+              ],
+              activity: 'Discussion: Role of programming in ICT'
+            }
+          },
+          {
+            number: 6,
+            topic: {
+              title: 'Internet Basics',
+              overview: 'Understanding internet fundamentals and services.',
+              keyPoints: [
+                'Definition and history of internet',
+                'Internet services and applications',
+                'Web browsers and search engines',
+                'Internet terminologies'
+              ],
+              activity: 'Practical: Explore web browsers and search engines'
+            }
+          },
+          {
+            number: 8,
+            topic: {
+              title: 'Internet Safety',
+              overview: 'Understanding online safety and security.',
+              keyPoints: [
+                'Cyber threats and attacks',
+                'Safe browsing practices',
+                'Password management',
+                'Online privacy protection'
+              ],
+              activity: 'Role-play: Handling phishing emails'
+            }
+          },
+          {
+            number: 9,
+            topic: {
+              title: 'ICT Gadgets',
+              overview: 'Understanding modern ICT devices and their impact.',
+              keyPoints: [
+                'Types of ICT gadgets',
+                'Features and specifications',
+                'Uses and applications',
+                'Impact on society'
+              ],
+              activity: 'Group project: Compare ICT gadgets'
+            }
+          },
+          {
+            number: 10,
+            topic: {
+              title: 'Troubleshooting',
+              overview: 'Basic computer troubleshooting techniques.',
+              keyPoints: [
+                'Common computer problems',
+                'Troubleshooting steps',
+                'Hardware and software issues',
+                'Preventive maintenance'
+              ],
+              activity: 'Practical: Diagnose and fix common computer issues'
+            }
+          }
+        ]
+      },
+      {
+        name: 'Third Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Database Management',
+              overview: 'Understanding database concepts and management.',
+              keyPoints: [
+                'Definition and features of databases',
+                'Creating tables and queries',
+                'Data entry and management',
+                'Examples: MS Access'
+              ],
+              activity: 'Practical: Create a simple database'
+            }
+          },
+          {
+            number: 2,
+            topic: {
+              title: 'Networking Basics',
+              overview: 'Understanding computer networks and their components.',
+              keyPoints: [
+                'Definition and types of networks',
+                'Network devices and their functions',
+                'Network topologies',
+                'Basic network setup'
+              ],
+              activity: 'Group activity: Design a simple network layout'
+            }
+          },
+          {
+            number: 3,
+            topic: {
+              title: 'Computer Security',
+              overview: 'Understanding computer security threats and protection.',
+              keyPoints: [
+                'Types of security threats',
+                'Antivirus software and firewalls',
+                'Data protection measures',
+                'Security best practices'
+              ],
+              activity: 'Practical: Install and update antivirus software'
+            }
+          },
+          {
+            number: 4,
+            topic: {
+              title: 'ICT in Society',
+              overview: 'Understanding the impact of ICT on society.',
+              keyPoints: [
+                'ICT in education and healthcare',
+                'E-commerce and online business',
+                'Social media and communication',
+                'Digital divide and accessibility'
+              ],
+              activity: 'Class presentation: ICT applications in daily life'
+            }
+          },
+          {
+            number: 5,
+            topic: {
+              title: 'Emerging Technologies',
+              overview: 'Understanding new and emerging ICT technologies.',
+              keyPoints: [
+                'Artificial Intelligence (AI)',
+                'Internet of Things (IoT)',
+                'Cloud computing',
+                'Future trends in ICT'
+              ],
+              activity: 'Discussion: Future of ICT'
+            }
+          },
+          {
+            number: 6,
+            topic: {
+              title: 'Project Work',
+              overview: 'Applying ICT skills to real-world problems.',
+              keyPoints: [
+                'Project planning and design',
+                'Implementation of ICT solutions',
+                'Documentation and presentation',
+                'Evaluation and feedback'
+              ],
+              activity: 'Develop and present a project'
+            }
+          },
+          {
+            number: 8,
+            topic: {
+              title: 'Career Opportunities in ICT',
+              overview: 'Understanding career paths in ICT.',
+              keyPoints: [
+                'ICT career options',
+                'Required skills and qualifications',
+                'Industry trends and demands',
+                'Professional development'
+              ],
+              activity: 'Guest lecture: ICT professional'
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'ss2',
+    name: 'SS 2',
+    terms: [
+      {
+        name: 'First Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Revision of SS1 Topics',
+              overview: 'Recap of fundamental ICT concepts from SS1.',
+              keyPoints: [
+                'Computer systems and components',
+                'Software and operating systems',
+                'Number systems and conversions',
+                'Basic ICT applications'
+              ],
+              activity: 'Quiz and practical review'
+            }
+          },
+          {
+            number: 2,
+            topic: {
+              title: 'Advanced Word Processing',
+              overview: 'Advanced features and techniques in word processing.',
+              keyPoints: [
+                'Mail merge and templates',
+                'Advanced formatting options',
+                'Document automation',
+                'Collaborative editing'
+              ],
+              activity: 'Practical: Create a mail merge document'
+            }
+          },
+          {
+            number: 3,
+            topic: {
+              title: 'Advanced Spreadsheets',
+              overview: 'Advanced spreadsheet functions and data analysis.',
+              keyPoints: [
+                'Advanced formulas and functions',
+                'Pivot tables and data analysis',
+                'Charts and data visualization',
+                'Data validation and protection'
+              ],
+              activity: 'Practical: Analyze data using Excel functions'
+            }
+          },
+          {
+            number: 4,
+            topic: {
+              title: 'Graphic Packages',
+              overview: 'Understanding and using graphic design software.',
+              keyPoints: [
+                'Introduction to graphic design',
+                'Tools and features in CorelDRAW/Photoshop',
+                'Image editing and manipulation',
+                'Design principles and techniques'
+              ],
+              activity: 'Practical: Create a simple graphic design'
+            }
+          },
+          {
+            number: 5,
+            topic: {
+              title: 'Database Management (Advanced)',
+              overview: 'Advanced database concepts and operations.',
+              keyPoints: [
+                'Relational database concepts',
+                'Advanced queries and forms',
+                'Reports and data presentation',
+                'Database security and maintenance'
+              ],
+              activity: 'Practical: Design a database with queries'
+            }
+          },
+          {
+            number: 6,
+            topic: {
+              title: 'Internet Applications',
+              overview: 'Advanced internet tools and applications.',
+              keyPoints: [
+                'Email management and security',
+                'Cloud storage and collaboration',
+                'Online productivity tools',
+                'Web-based applications'
+              ],
+              activity: 'Practical: Use Google Drive for collaboration'
+            }
+          },
+          {
+            number: 8,
+            topic: {
+              title: 'Web Browsers',
+              overview: 'Understanding web browsers and their configurations.',
+              keyPoints: [
+                'Browser types and features',
+                'Security settings and configurations',
+                'Cookies and cache management',
+                'Browser extensions and add-ons'
+              ],
+              activity: 'Practical: Configure browser settings'
+            }
+          },
+          {
+            number: 9,
+            topic: {
+              title: 'Programming Concepts',
+              overview: 'Introduction to programming fundamentals.',
+              keyPoints: [
+                'Algorithms and flowcharts',
+                'Basic programming concepts',
+                'Python programming basics',
+                'Problem-solving techniques'
+              ],
+              activity: 'Practical: Write a basic Python program'
+            }
+          }
+        ]
+      },
+      {
+        name: 'Second Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Networking (Advanced)',
+              overview: 'Advanced networking concepts and configurations.',
+              keyPoints: [
+                'Network topologies and protocols',
+                'IP addressing and subnetting',
+                'Network security and management',
+                'Wireless networking'
+              ],
+              activity: 'Practical: Simulate a network setup'
+            }
+          },
+          {
+            number: 2,
+            topic: {
+              title: 'Web Design Basics',
+              overview: 'Introduction to web design and development.',
+              keyPoints: [
+                'HTML structure and elements',
+                'CSS styling and layout',
+                'Basic web page creation',
+                'Web design principles'
+              ],
+              activity: 'Practical: Code a basic webpage'
+            }
+          },
+          {
+            number: 3,
+            topic: {
+              title: 'Operating Systems (Advanced)',
+              overview: 'Advanced operating system concepts and management.',
+              keyPoints: [
+                'Process and memory management',
+                'File systems and security',
+                'System configuration and optimization',
+                'Troubleshooting and maintenance'
+              ],
+              activity: 'Practical: Explore OS task manager'
+            }
+          },
+          {
+            number: 4,
+            topic: {
+              title: 'System Security',
+              overview: 'Advanced system security concepts and practices.',
+              keyPoints: [
+                'Encryption and cryptography',
+                'Firewalls and network security',
+                'Access control and authentication',
+                'Security policies and procedures'
+              ],
+              activity: 'Practical: Configure a basic firewall'
+            }
+          },
+          {
+            number: 5,
+            topic: {
+              title: 'ICT as a Transformation Tool',
+              overview: 'Understanding ICT impact on various sectors.',
+              keyPoints: [
+                'ICT in governance and administration',
+                'ICT in agriculture and industry',
+                'Digital transformation strategies',
+                'Case studies and applications'
+              ],
+              activity: 'Group project: ICT solutions for local issues'
+            }
+          },
+          {
+            number: 6,
+            topic: {
+              title: 'Software Development',
+              overview: 'Understanding software development processes.',
+              keyPoints: [
+                'Software Development Life Cycle (SDLC)',
+                'Development methodologies',
+                'Requirements analysis and design',
+                'Testing and deployment'
+              ],
+              activity: 'Discussion: Stages of software development'
+            }
+          },
+          {
+            number: 8,
+            topic: {
+              title: 'Data Communication',
+              overview: 'Understanding data transmission and communication.',
+              keyPoints: [
+                'Communication modes and media',
+                'Data transmission methods',
+                'Network protocols and standards',
+                'Communication technologies'
+              ],
+              activity: 'Practical: Identify transmission media'
+            }
+          }
+        ]
+      },
+      {
+        name: 'Third Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Advanced Programming',
+              overview: 'Advanced programming concepts and techniques.',
+              keyPoints: [
+                'Python programming advanced features',
+                'Loops and functions',
+                'Data structures and algorithms',
+                'Debugging and error handling'
+              ],
+              activity: 'Practical: Write a program with loops'
+            }
+          },
+          {
+            number: 2,
+            topic: {
+              title: 'Cloud Computing',
+              overview: 'Understanding cloud computing concepts and services.',
+              keyPoints: [
+                'Cloud service models (IaaS, PaaS, SaaS)',
+                'Cloud deployment models',
+                'Benefits and challenges',
+                'Cloud security and management'
+              ],
+              activity: 'Discussion: Cloud vs. traditional computing'
+            }
+          },
+          {
+            number: 3,
+            topic: {
+              title: 'ICT Policies',
+              overview: 'Understanding ICT policies and regulations.',
+              keyPoints: [
+                'National ICT policies',
+                'Data protection laws',
+                'Cybercrime legislation',
+                'Digital rights and responsibilities'
+              ],
+              activity: 'Debate: Privacy vs. security in ICT'
+            }
+          },
+          {
+            number: 4,
+            topic: {
+              title: 'Project Work',
+              overview: 'Developing an ICT-based solution.',
+              keyPoints: [
+                'Project planning and design',
+                'Implementation and testing',
+                'Documentation and presentation',
+                'Evaluation and feedback'
+              ],
+              activity: 'Develop and present a project'
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'ss3',
+    name: 'SS 3',
+    terms: [
+      {
+        name: 'First Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Revision of SS2 Topics',
+              overview: 'Recap of advanced ICT concepts from SS2.',
+              keyPoints: [
+                'Advanced programming concepts',
+                'Networking and security',
+                'Web design and development',
+                'Database management'
+              ],
+              activity: 'Quiz and practical review'
+            }
+          },
+          {
+            number: 2,
+            topic: {
+              title: 'Advanced Web Design',
+              overview: 'Advanced web development concepts and techniques.',
+              keyPoints: [
+                'JavaScript programming',
+                'Responsive web design',
+                'Bootstrap framework',
+                'Web development tools'
+              ],
+              activity: 'Practical: Create a responsive webpage'
+            }
+          },
+          {
+            number: 3,
+            topic: {
+              title: 'Database Administration',
+              overview: 'Advanced database management and administration.',
+              keyPoints: [
+                'Database backup and recovery',
+                'User management and security',
+                'SQL programming basics',
+                'Database optimization'
+              ],
+              activity: 'Practical: Write SQL queries'
+            }
+          },
+          {
+            number: 4,
+            topic: {
+              title: 'System Analysis and Design',
+              overview: 'Understanding system development processes.',
+              keyPoints: [
+                'System development lifecycle',
+                'Feasibility studies and analysis',
+                'System design principles',
+                'Implementation strategies'
+              ],
+              activity: 'Group activity: Design a system flowchart'
+            }
+          },
+          {
+            number: 5,
+            topic: {
+              title: 'Artificial Intelligence',
+              overview: 'Introduction to AI concepts and applications.',
+              keyPoints: [
+                'Definition and types of AI',
+                'Machine learning basics',
+                'AI applications in various fields',
+                'Ethical considerations in AI'
+              ],
+              activity: 'Discussion: AI in Nigeria'
+            }
+          },
+          {
+            number: 7,
+            topic: {
+              title: 'Cybersecurity',
+              overview: 'Advanced cybersecurity concepts and practices.',
+              keyPoints: [
+                'Cybercrime and prevention',
+                'Ethical hacking principles',
+                'Penetration testing basics',
+                'Security best practices'
+              ],
+              activity: 'Practical: Simulate a security audit'
+            }
+          },
+          {
+            number: 8,
+            topic: {
+              title: 'ICT Project Management',
+              overview: 'Understanding project management in ICT.',
+              keyPoints: [
+                'Project planning and scheduling',
+                'Resource management',
+                'Risk assessment and mitigation',
+                'Project monitoring and control'
+              ],
+              activity: 'Practical: Create a project timeline'
+            }
+          }
+        ]
+      },
+      {
+        name: 'Second Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Advanced Programming (Python)',
+              overview: 'Advanced Python programming concepts.',
+              keyPoints: [
+                'Object-oriented programming',
+                'Modules and libraries',
+                'Advanced data structures',
+                'Error handling and debugging'
+              ],
+              activity: 'Practical: Create a Python class'
+            }
+          },
+          {
+            number: 2,
+            topic: {
+              title: 'Mobile App Development',
+              overview: 'Introduction to mobile application development.',
+              keyPoints: [
+                'Mobile development platforms',
+                'Cross-platform development',
+                'UI/UX design principles',
+                'App deployment and testing'
+              ],
+              activity: 'Practical: Design a simple app interface'
+            }
+          },
+          {
+            number: 3,
+            topic: {
+              title: 'Big Data and Analytics',
+              overview: 'Understanding big data concepts and analysis.',
+              keyPoints: [
+                'Big data characteristics',
+                'Data analysis tools',
+                'Data visualization techniques',
+                'Business intelligence'
+              ],
+              activity: 'Practical: Create a data dashboard'
+            }
+          },
+          {
+            number: 4,
+            topic: {
+              title: 'ICT in Emerging Fields',
+              overview: 'Exploring new and emerging ICT technologies.',
+              keyPoints: [
+                'Blockchain technology',
+                'Internet of Things (IoT)',
+                'Robotics and automation',
+                'Future ICT trends'
+              ],
+              activity: 'Group project: Propose an IoT solution'
+            }
+          },
+          {
+            number: 5,
+            topic: {
+              title: 'Entrepreneurship in ICT',
+              overview: 'Understanding ICT business opportunities.',
+              keyPoints: [
+                'ICT business models',
+                'Startup funding and management',
+                'Marketing and customer acquisition',
+                'Business planning and strategy'
+              ],
+              activity: 'Guest lecture: ICT entrepreneur'
+            }
+          },
+          {
+            number: 7,
+            topic: {
+              title: 'Revision for External Exams',
+              overview: 'Preparation for WAEC/NECO ICT examinations.',
+              keyPoints: [
+                'Exam syllabus review',
+                'Key topics and concepts',
+                'Exam techniques and strategies',
+                'Practice questions and answers'
+              ],
+              activity: 'Mock exams and practical tasks'
+            }
+          }
+        ]
+      },
+      {
+        name: 'Third Term',
+        weeks: [
+          {
+            number: 1,
+            topic: {
+              title: 'Intensive Revision',
+              overview: 'Comprehensive review of SS1-SS3 topics.',
+              keyPoints: [
+                'Core ICT concepts',
+                'Practical skills development',
+                'Exam preparation techniques',
+                'Time management strategies'
+              ],
+              activity: 'Mock exams and practical labs'
+            }
+          },
+          {
+            number: 5,
+            topic: {
+              title: 'Final Project',
+              overview: 'Development of a comprehensive ICT project.',
+              keyPoints: [
+                'Project planning and execution',
+                'Documentation and presentation',
+                'Testing and evaluation',
+                'Project defense'
+              ],
+              activity: 'Project development and presentation'
+            }
+          },
+          {
+            number: 9,
+            topic: {
+              title: 'External Examinations',
+              overview: 'Preparation for national examinations.',
+              keyPoints: [
+                'Exam day procedures',
+                'Time management in exams',
+                'Answering techniques',
+                'Stress management'
+              ],
+              activity: 'Mock exams and counseling'
+            }
+          }
+        ]
+      }
+    ]
   }
 ];
