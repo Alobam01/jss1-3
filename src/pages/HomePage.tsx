@@ -12,10 +12,10 @@ const HomePage: React.FC = () => {
           Comprehensive ICT Textbook
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-          A complete ICT curriculum for Junior Secondary School (JSS1 - JSS3)
+          A complete ICT curriculum for  Secondary School (JSS1 - SS3)
         </p>
         <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          This comprehensive ICT textbook covers all essential topics for Junior Secondary School students, 
+          This comprehensive ICT textbook covers all essential topics for  Secondary School students, 
           providing detailed lessons, practical examples, and interactive CBT tests to enhance learning.
         </p>
       </div>
@@ -94,7 +94,7 @@ const HomePage: React.FC = () => {
                 <span className="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-200 mr-3">
                   1
                 </span>
-                <span>Complete ICT curriculum for JSS1 to JSS3</span>
+                <span>Complete ICT curriculum for JSS1 to SS3</span>
               </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-200 mr-3">
