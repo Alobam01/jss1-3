@@ -11,10 +11,10 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({
   title = 'ICT Textbook for JSS1-3',
-  description = 'Comprehensive ICT textbook for Junior Secondary School (JSS1-3) with detailed lessons, practical examples, and interactive CBT tests.',
-  keywords = ['ICT', 'JSS1', 'JSS2', 'JSS3', 'Computer Studies', 'Junior Secondary School', 'CBT', 'Computer Based Test', 'Education', 'Nigeria'],
-  author = 'Aiyohuyin Ewaen Patrick',
-  image = '/images/ict-textbook-cover.svg'
+  description = 'Comprehensive ICT textbook for  Secondary School (JSS1- ss3) with detailed lessons, practical examples, and interactive CBT tests.',
+  keywords = ['ICT', 'JSS1', 'JSS2', 'JSS3','SS1', 'SS2', 'SS3', 'Computer Studies', ' Secondary School', 'CBT', 'Computer Based Test', 'Education', 'Nigeria'],
+  author = 'Patotec Software Solutions',
+  image = 'https://ictforsecondryschools.vercel.app/images/ict-textbook-cover.svg'
 }) => {
   const siteUrl = window.location.origin;
   const fullImageUrl = `${siteUrl}${image}`;
@@ -35,7 +35,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content="ICT Textbook Cover" />
-      <meta property="og:site_name" content="ICT Textbook for JSS1-3" />
+      <meta property="og:site_name" content="ICT Textbook for JSS1-SS3" />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
